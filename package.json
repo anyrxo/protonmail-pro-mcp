@@ -1,0 +1,72 @@
+{
+  "name": "@sirency/protonmail-pro-mcp",
+  "version": "1.0.0",
+  "description": "🌟 The Ultimate ProtonMail MCP by The Sirency Collective - Professional email management with 20+ tools, advanced analytics, and seamless Proton Bridge integration.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "protonmail-pro-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node test.js",
+    "prepare": "npm run build",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "protonmail",
+    "mcp",
+    "email",
+    "sirency",
+    "automation",
+    "typescript",
+    "claude",
+    "ai",
+    "productivity",
+    "bridge",
+    "smtp",
+    "imap",
+    "analytics",
+    "professional"
+  ],
+  "author": {
+    "name": "The Sirency Collective",
+    "email": "contact@sirency.com",
+    "url": "https://sirency.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/anyrxo/protonmail-pro-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyrxo/protonmail-pro-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anyrxo/protonmail-pro-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "imapflow": "^1.0.164",
+    "mailparser": "^3.7.1",
+    "nodemailer": "^6.9.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/nodemailer": "^6.4.19",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "FINAL-VALIDATION.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
